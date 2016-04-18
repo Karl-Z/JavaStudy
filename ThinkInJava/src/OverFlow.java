@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-
+import static debug.Debug.debug;
 /**
  * Created by azzhangc on 14/4/2016.
  */
@@ -13,7 +13,7 @@ public class OverFlow {
                 list.add("Out of memory soon");
             }
         } catch (OutOfMemoryError e) {
-            System.err.println("list size: " + list.size());
+            debug("list size: " + list.size());
             throw e;
         }
     }
